@@ -1,19 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toplearn</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello World!
-    </h1>
+    <header class="bg-[url('../src/images/landing.jpg')] bg-cover">
+        <section class="container px-5 flex justify-start py-3 items-center text-white lg:justify-between">
+            <div class="flex items-center  space-x-3 space-x-reverse divide-x-2 divide-slate-500">
+                <img src="images/logo.png" alt="logo" class="w-20 h-16">
+                <div class="pe-3 lg:hidden">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class="px-4 lg:hidden">
+                <i class="fa fa-search"></i>
+            </div>
+            <!-- menu -->
+
+            <nav class="space-x-4 space-x-reverse hidden lg:flex">
+                <a href="#">آخرین دوره ها</a>
+                <a href="">تخفیفات روزانه</a>
+                <a href="">بلاگ</a>
+                <a href="">فرصت های شغلی</a>
+                <a href="">همکاری با تاپلرن</a>
+                <a href="">مشاوره و رفع اشکال</a>
+            </nav>
+
+            <div class="flex space-x-2 space-x-reverse">
+                <i class="fa fa-user"></i>
+                <a href="" class="after:content-['_/'] text-sm">ورود</a>
+                <a href="" class="text-sm">ثبت نام</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-white text-center container pt-6 px-8 flex justify-center items-center">
+                <h1 class="text-xl leading-10">
+                    خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن با کمترینــــ هزینه خودت حرفه ایــــ یاد بگیـر
+                </h1>
+
+            </div>
+        </section>
+
+        <section class="flex justify-center pb-28 pt-10 items-center text-center">
+            <input type="text" placeholder="چی میخوای یادبگیری؟"
+                class="w-4/5 lg:w-2/5 h-12 rounded-3xl px-5 shadow-2xl ring-8 ring-slate-300/20" />
+        </section>
+
+
+        <section
+            class="hidden lg:flex lg:justify-center lg:items-center lg:text-center lg:pb-14 lg:space-x-20 lg:flex-row-reverse">
+
+            <article class="text-white">
+                <img src="images/stat-student.png" alt="" class="w-32 h-32">
+                <div>462,530</div>
+                <div>نفر دانشجو</div>
+            </article>
+            <article class="text-white">
+                <img src="images/stat-teacher.png" alt="" class="w-32 h-32">
+                <div>462,530</div>
+                <div>نفر دانشجو</div>
+            </article>
+            <article class="text-white">
+                <img src="images/stat-time.png" alt="" class="w-32 h-32">
+                <div>462,530</div>
+                <div>نفر دانشجو</div>
+            </article>
+        </section>
+
+
+    </header>
+
+
+    <main></main>
+    <footer>
+
+    </footer>
+
 </body>
+
 
 </html>
