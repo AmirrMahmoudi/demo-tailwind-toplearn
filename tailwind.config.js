@@ -5,7 +5,14 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      screens: {
+        min600: "600px",
+      },
+      colors: {
+        "custom-blue": "#153248",
+      },
+    },
   },
   plugins: [],
 };
